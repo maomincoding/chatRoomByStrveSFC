@@ -1,0 +1,39 @@
+<div class="home" style="${showStyle}" $key>
+  <div class="content">
+    <ul $key="chatBox" class="chat-box">
+      ${chatArr.map(
+        (item) => `<li class="chat-item">
+          ${item.name === name
+            ? ` <div class="chat-msg mine">
+                <p class="msg mineBg msg-m">${item.txt}</p>
+                <p class="user" style="background: ${bg}">
+                  ${useName(item.name)}
+                </p>
+              </div>`
+            : `
+                <div class="chat-msg other">
+                  <p class="user" style="background:${item.bg}" $key>
+                    ${useName(item.name)}
+                  </p>
+                  <p class="msg otherBg msg-o" $key>${item.txt}</p>
+                </div>
+              `}
+        </li>`
+      ).join('')}
+    </ul>
+  </div>
+  <div class="footer">
+    <div class="footer-inner">
+      <input
+        id="textValue"
+        $key="textValueDom"
+        placeholder="说点什么..."
+        autofocus
+        @change="app.onTextValue"
+      />
+      <div class="send-box">
+        <p class="send active" @click="app.send">发送</p>
+      </div>
+    </div>
+  </div>
+</div>
