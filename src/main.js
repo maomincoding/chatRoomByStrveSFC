@@ -1,5 +1,5 @@
-import { compilerTemplate, createApp } from "@/@strve-sfc";
-import App from "@/App.strve";
-import { data } from "@/app.js";
+import { createApp, compilerTemplate } from "@/@strve-sfc";
+import app from "@/template/app.strve";
+import { data } from "@/template/app.js";
 
-createApp(compilerTemplate(App, data, "app")).mount("#app");
+createApp(compilerTemplate(app, data, "app")).mount("#app");

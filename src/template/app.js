@@ -1,5 +1,5 @@
 import { setData, domInfo, onMounted } from "@/@strve-sfc";
-import "@/app.css";
+import "./app.css";
 
 // WebSocket实例
 let socket = null;
@@ -50,7 +50,8 @@ function init() {
       alert("服务连接错误！");
     };
     socket.onclose = () => {
-      alert("服务连接关闭，请重新进入应用");
+      alert("服务连接关闭，点击确定将重新进入应用");
+      location.reload();
     };
     socket.onmessage = (msg) => {
       const obj = JSON.parse(msg.data);

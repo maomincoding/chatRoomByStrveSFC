@@ -1,4 +1,5 @@
 <div class="home" style="${showStyle}" $key>
+  <!-- 内容 -->
   <div class="content">
     <ul $key="chatBox" class="chat-box">
       ${chatArr.map(
@@ -22,6 +23,7 @@
       ).join('')}
     </ul>
   </div>
+  <!-- 底部 -->
   <div class="footer">
     <div class="footer-inner">
       <input
