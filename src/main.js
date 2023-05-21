@@ -1,4 +1,4 @@
-import { compilerTemplate, createApp } from "@/@strve-sfc/index.js";
+import { compilerTemplate, createApp } from "@/@strve-sfc";
 import App from "@/App.strve";
 import { data } from "@/app.js";
 

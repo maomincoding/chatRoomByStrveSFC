@@ -1,4 +1,4 @@
-import { setData, domInfo, onMounted } from "@/@strve-sfc/index.js";
+import { setData, domInfo, onMounted } from "@/@strve-sfc";
 import "@/app.css";
 
 // WebSocket实例

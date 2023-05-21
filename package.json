@@ -1,6 +1,6 @@
 {
-  "name": "strve-sfc1",
-  "description": "Strve single-file component template",
+  "name": "chat-room-by-strve-sfc",
+  "description": "Chat Room Built by Strve SFC.",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
